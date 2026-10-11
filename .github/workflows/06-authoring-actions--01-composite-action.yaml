@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-24.04
     name: One usage of the composite action
     steps:
-      - uses: actions/checkout@ff7abcd0c3c05ccf6adc123a8cd1fd4fb30fb493 # v5.0.0
+      # - uses: actions/checkout@ff7abcd0c3c05ccf6adc123a8cd1fd4fb30fb493 # v5.0.0
       - id: composite-action-instance
-        uses: ./06-authoring-actions/composite-action
+        uses: $/06-authoring-actions/composite-action
         with:
           who-to-greet: "from composite action in hello-world-1!"
       - env:
